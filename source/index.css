@@ -6,13 +6,14 @@
 }
 
 html {
-  color-scheme: light dark;
+  color-scheme: dark;
 }
 
 body {
   font-family: system-ui;
   font-size: 1.125rem;
   line-height: 1.5;
+  background-color: black;
 }
 
 main {
@@ -20,9 +21,48 @@ main {
   margin-inline: auto;
 }
 
+ul,
+li {
+  padding-left: 2ch;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  text-align: justify;
+  text-justify: distribute;
+}
+
 img,
 svg,
 video {
   max-width: 100%;
   display: block;
+}
+
+.section-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.flyer {
+  border: 4px solid white;
+}
+
+.center {
+  text-align: center;
 }

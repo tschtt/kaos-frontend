@@ -2,6 +2,12 @@
 module.exports = function (eleventyConfig) {
 
     // add css to template formats
+    // eleventyConfig.addPassthroughCopy("assets");
+    
+    eleventyConfig.addTemplateFormats("jpg");
+    eleventyConfig.addTemplateFormats("png");
+    
+    // add css to template formats
     eleventyConfig.addTemplateFormats("css");
     eleventyConfig.addExtension("css", {
         outputFileExtension: "css",
