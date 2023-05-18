@@ -4,6 +4,9 @@ module.exports = function (eleventyConfig) {
     // add css to template formats
     // eleventyConfig.addPassthroughCopy("assets");
     
+    eleventyConfig.addTemplateFormats("webmanifest");
+    eleventyConfig.addTemplateFormats("xml");
+    eleventyConfig.addTemplateFormats("ico");
     eleventyConfig.addTemplateFormats("jpg");
     eleventyConfig.addTemplateFormats("png");
     
